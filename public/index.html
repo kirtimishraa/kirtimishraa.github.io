@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en"
+  data-cb-collapse-enabled=""
+  data-cb-collapse-default=""
+  data-cb-collapse-lines=""
+  data-cb-collapse-auto-height=""
+  data-cb-collapse-collapsed-height="">
+  <head>
+	<meta name="generator" content="Hugo 0.155.2">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Everything Kirti | Everything Kirti</title>
+
+<meta name="description" content="I build and scale performance systems that drive revenue." />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.svg" />
+
+
+
+
+  <link rel="apple-touch-icon" href="/" />
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <link rel="manifest" href="https://minimal-black-demo.netlify.app/manifest.webmanifest" />
+    
+  
+
+
+<link rel="stylesheet" href="/css/main.css"> 
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css"
+  >
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/css/justifiedGallery.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ theme: "dark" });
+</script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var systemDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var defaultTheme =
+        'dark';
+
+      var theme =
+        stored ||
+        (defaultTheme === "dark"
+          ? "dark"
+          : defaultTheme === "light"
+          ? "light"
+          : systemDark
+          ? "dark"
+          : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header class="pt-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    
+    <div class="nav-shell">
+      <div class="nav-inner">
+        
+        <a href="/" class="flex items-center gap-2">
+          
+            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-surface">
+              <img
+                src="/images/logo.png"
+                alt="AMPLIFY"
+                class="h-full w-full object-cover"
+              >
+            </div>
+          
+          <span class="text-xs font-semibold tracking-wide">
+            AMPLIFY
+          </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          
+          <nav class="hidden items-center gap-5 md:flex">
+              <a
+                href="/"
+                class="nav-link link-underline flex items-center gap-1 text-text"
+              >
+                
+                  <i class="fa-regular fa-house text-[0.75rem]"></i>
+                
+                <span>Home</span>
+              </a>
+              <a
+                href="/about/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-user text-[0.75rem]"></i>
+                
+                <span>About</span>
+              </a>
+              <a
+                href="/projects/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-folder-open text-[0.75rem]"></i>
+                
+                <span>Projects</span>
+              </a>
+              <a
+                href="/blog/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-note-sticky text-[0.75rem]"></i>
+                
+                <span>Blog</span>
+              </a>
+          </nav>
+
+          
+          <button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  data-theme-toggle
+>
+  <span data-theme-icon-light style="display: none">
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M8.05 15.95l-1.414 1.414m0-11.314L8.05 8.05m9.9 9.9-1.414-1.414"
+      />
+    </svg>
+  </span>
+
+  <span data-theme-icon-dark>
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z" />
+    </svg>
+  </span>
+</button>
+
+
+          
+          <button
+            type="button"
+            class="ml-1 inline-flex items-center justify-center rounded-full border border-border bg-bg p-2 text-muted shadow-sm hover:text-accent md:hidden"
+            aria-label="Toggle navigation"
+            data-mobile-nav-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto mt-2 max-w-7xl px-4 sm:px-6 md:hidden">
+    <nav
+      class="hidden rounded-2xl border border-border bg-surface px-4 py-3 text-sm text-muted shadow-md"
+      data-mobile-nav
+    >
+      
+        <a href="/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-house text-[0.8rem]"></i>
+          
+          <span>Home</span>
+        </a>
+      
+        <a href="/about/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-user text-[0.8rem]"></i>
+          
+          <span>About</span>
+        </a>
+      
+        <a href="/projects/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-folder-open text-[0.8rem]"></i>
+          
+          <span>Projects</span>
+        </a>
+      
+        <a href="/blog/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-note-sticky text-[0.8rem]"></i>
+          
+          <span>Blog</span>
+        </a>
+      
+    </nav>
+  </div>
+</header>
+
+
+      <main class="flex-1">
+        
+  <section class="layout-page">
+    <div class="page-int section-stack section-stack--home">
+      
+      
+
+      
+        <div class="grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)] items-start">
+  <div class="space-y-5 animate-fade-up">
+    
+    <div class="flex flex-wrap items-center gap-4">
+      
+        <p class="eyebrow font-medium text-sm text-accent">Marketing, Web &amp; Creative Studio</p>
+      
+
+      
+        <span class="badge-available px-3">
+          <span class="h-1.5 w-1.5 rounded-full bg-white/95"></span>
+          <span>Available for work</span>
+        </span>
+      
+    </div>
+
+    <div class="space-y-2">
+      <h1 class="heading-page text-3xl sm:text-4xl">
+        Hi, We&#39;re your growth partners
+      </h1>
+      
+        <p class="text-sm font-medium text-muted">
+          We build brands and growth engines for startups - focused on sustainable growth - without burning their capital.
+        </p>
+      
+    </div>
+
+    
+      <p class="max-w-xl text-sm text-muted">
+        We’re a specialist growth team partnering deeply with growth-focused brands to design and operate full-stack growth - from performance and creative to organic channels, web, and technical foundations. Built for long-term performance, not short-term spikes.
+      </p>
+    
+
+    
+    <div class="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-muted">
+      
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface/90 px-3 py-1.5">
+          <i class="fa-solid fa-location-dot text-[0.8rem]"></i>
+          <span class="font-medium">Mumbai, IN</span>
+        </span>
+      
+
+      
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface/80 px-3 py-1.5">
+          <i class="fa-regular fa-circle-dot text-[0.8rem]"></i>
+          <span>Currently focused on AI-powered marketing automation and E-commerce ads.</span>
+        </span>
+      
+    </div>
+
+    
+    
+
+    
+    <div class="mt-4 flex flex-wrap items-center gap-3">
+      
+        <a href="/experience/" class="btn-primary">
+          View Experience
+        </a>
+      
+
+      
+        <a href="/blog/" class="btn-ghost link-underline">
+          Read the Blog
+        </a>
+      
+    </div>
+  </div>
+
+  
+  
+</div>
+
+      
+        
+  <div class="space-y-4">
+    <div class="space-y-3">
+      <h2 class="heading-section">Tools &amp; Platforms</h2>
+      <div class="card card-pad text-xs text-muted">
+        
+          <p class="mb-2">Where we Specialize:</p>
+        
+
+        
+          <ul class="list-disc space-y-1 pl-4">
+            
+              <li>Tracking &amp; Analytics - Google Tag Manager (GTM), Google Analytics 4 (GA4), Meta Pixel, Google Merchant Center (GMC)</li>
+            
+              <li>Paid Media &amp; Ad Platforms - Meta Ads (Facebook, Instagram), Google Ads (Search, Display, Video, Shopping, Performance Max), Programmatic Advertising (DSPs - Display &amp; Video)</li>
+            
+              <li>Auditing &amp; Market Insights - Screaming Frog, Ahrefs, SEMrush, Google Trends, SurveyMonkey, Brandwatch</li>
+            
+              <li>Creative Studio - Figma, Illustrator, Photoshop, Premiere Pro, After Effects, DaVinci Resolve, Blender</li>
+            
+              <li>Content &amp; Conversion Copy - Perplexity, Jasper, Anyword, Unbounce Smart Copy, ChatGPT, Hotjar</li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+        
+  <div class="space-y-5 animate-fade-up">
+    <div class="space-y-2">
+      <h3 class="heading-section text-base">
+        What I Work With
+      </h3>
+
+      <div class="tech-strip tech-strip--wide">
+        
+        <div class="tech-strip-track tech-strip-track--primary">
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-car tech-icon"></i>
+              
+              <span class="font-medium">Toyota</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-clock tech-icon"></i>
+              
+              <span class="font-medium">Citizen Watch</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-film tech-icon"></i>
+              
+              <span class="font-medium">Netflix</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-building-columns tech-icon"></i>
+              
+              <span class="font-medium">First Hawaiian Bank</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-gear tech-icon"></i>
+              
+              <span class="font-medium">Direct Tire</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-bowl-food tech-icon"></i>
+              
+              <span class="font-medium">Morey&#39;s Seafood</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-hospital tech-icon"></i>
+              
+              <span class="font-medium">Organon</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-hospital tech-icon"></i>
+              
+              <span class="font-medium">Oak Creek Dental Care</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Lodha</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Minerva</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Dattani</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-screwdriver-wrench tech-icon"></i>
+              
+              <span class="font-medium">Galaxie Global</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-brush tech-icon"></i>
+              
+              <span class="font-medium">Painting Drive</span>
+            </div>
+          
+            <div class="tech-strip-item">
+              
+                <i class="fa-solid fa-graduation-cap tech-icon"></i>
+              
+              <span class="font-medium">DeveLearn</span>
+            </div>
+          
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-car tech-icon"></i>
+              
+              <span class="font-medium">Toyota</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-clock tech-icon"></i>
+              
+              <span class="font-medium">Citizen Watch</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-film tech-icon"></i>
+              
+              <span class="font-medium">Netflix</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-building-columns tech-icon"></i>
+              
+              <span class="font-medium">First Hawaiian Bank</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-gear tech-icon"></i>
+              
+              <span class="font-medium">Direct Tire</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-bowl-food tech-icon"></i>
+              
+              <span class="font-medium">Morey&#39;s Seafood</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-hospital tech-icon"></i>
+              
+              <span class="font-medium">Organon</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-hospital tech-icon"></i>
+              
+              <span class="font-medium">Oak Creek Dental Care</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Lodha</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Minerva</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-building tech-icon"></i>
+              
+              <span class="font-medium">Dattani</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-screwdriver-wrench tech-icon"></i>
+              
+              <span class="font-medium">Galaxie Global</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-brush tech-icon"></i>
+              
+              <span class="font-medium">Painting Drive</span>
+            </div>
+          
+            <div class="tech-strip-item" aria-hidden="true">
+              
+                <i class="fa-solid fa-graduation-cap tech-icon"></i>
+              
+              <span class="font-medium">DeveLearn</span>
+            </div>
+          
+        </div>
+
+        
+        
+          <div class="tech-strip-track tech-strip-track--secondary">
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-car tech-icon"></i>
+                
+                <span class="font-medium">Toyota</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-clock tech-icon"></i>
+                
+                <span class="font-medium">Citizen Watch</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-film tech-icon"></i>
+                
+                <span class="font-medium">Netflix</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-building-columns tech-icon"></i>
+                
+                <span class="font-medium">First Hawaiian Bank</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-gear tech-icon"></i>
+                
+                <span class="font-medium">Direct Tire</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-bowl-food tech-icon"></i>
+                
+                <span class="font-medium">Morey&#39;s Seafood</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-hospital tech-icon"></i>
+                
+                <span class="font-medium">Organon</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-hospital tech-icon"></i>
+                
+                <span class="font-medium">Oak Creek Dental Care</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Lodha</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Minerva</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Dattani</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-screwdriver-wrench tech-icon"></i>
+                
+                <span class="font-medium">Galaxie Global</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-brush tech-icon"></i>
+                
+                <span class="font-medium">Painting Drive</span>
+              </div>
+            
+              <div class="tech-strip-item">
+                
+                  <i class="fa-solid fa-graduation-cap tech-icon"></i>
+                
+                <span class="font-medium">DeveLearn</span>
+              </div>
+            
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-car tech-icon"></i>
+                
+                <span class="font-medium">Toyota</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-clock tech-icon"></i>
+                
+                <span class="font-medium">Citizen Watch</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-film tech-icon"></i>
+                
+                <span class="font-medium">Netflix</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-building-columns tech-icon"></i>
+                
+                <span class="font-medium">First Hawaiian Bank</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-gear tech-icon"></i>
+                
+                <span class="font-medium">Direct Tire</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-bowl-food tech-icon"></i>
+                
+                <span class="font-medium">Morey&#39;s Seafood</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-hospital tech-icon"></i>
+                
+                <span class="font-medium">Organon</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-hospital tech-icon"></i>
+                
+                <span class="font-medium">Oak Creek Dental Care</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Lodha</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Minerva</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-building tech-icon"></i>
+                
+                <span class="font-medium">Dattani</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-screwdriver-wrench tech-icon"></i>
+                
+                <span class="font-medium">Galaxie Global</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-brush tech-icon"></i>
+                
+                <span class="font-medium">Painting Drive</span>
+              </div>
+            
+              <div class="tech-strip-item" aria-hidden="true">
+                
+                  <i class="fa-solid fa-graduation-cap tech-icon"></i>
+                
+                <span class="font-medium">DeveLearn</span>
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+        
+  <div class="space-y-3 animate-fade-up">
+    <div class="space-y-1">
+      <h2 class="heading-section">
+        Selected Projects
+      </h2>
+      
+    </div>
+
+    
+    
+    
+    
+      
+    
+    
+
+    <div class="grid gap-4 md:grid-cols-2">
+      
+        <p class="text-xs text-muted">
+          No projects yet. Add some under <code>content/projects</code>.
+        </p>
+      
+    </div>
+
+    <div class="mt-3 flex justify-end">
+      <a
+        href="/projects/"
+        class="btn-primary btn-primary-sm inline-flex items-center gap-2"
+      >
+        <span>View all projects</span>
+        <i class="fa-solid fa-arrow-right-long text-[0.8rem]"></i>
+      </a>
+    </div>
+  </div>
+
+
+      
+        
+  <div class="space-y-3 animate-fade-up">
+    <div class="space-y-1">
+      <h2 class="heading-section">
+        Latest Writing
+      </h2>
+      
+    </div>
+
+    
+    
+
+    <div class="grid gap-4 md:grid-cols-2">
+      
+        <p class="text-xs text-muted">
+          No posts yet. Add some under <code>content/blog</code>.
+        </p>
+      
+    </div>
+
+    <div class="mt-3 flex justify-end">
+      <a
+        href="/blog/"
+        class="btn-primary btn-primary-sm inline-flex items-center gap-2"
+      >
+        <span>View all posts</span>
+        <i class="fa-solid fa-arrow-right-long text-[0.8rem]"></i>
+      </a>
+    </div>
+  </div>
+
+
+      
+    </div>
+  </section>
+
+      </main>
+
+      <footer class="pb-6 pt-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="footer-shell">
+      <div class="footer-inner">
+        
+        <div class="space-y-1">
+          <p class="footer-small">
+            &copy; 2026 Everything Kirti — All rights
+            reserved.
+          </p>
+
+          <p class="footer-small flex flex-wrap items-center gap-1">
+            <span>Built with</span>
+
+            <a
+              href="https://gohugo.io/"
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Hugo</span>
+            </a>
+
+            <span>/</span>
+
+            <a
+              href=""
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Minimal&nbsp;Black</span>
+            </a>
+          </p>
+        </div>
+
+        
+        
+        <div class="footer-links">
+          
+          <a
+            href="https://www.linkedin.com/in/kirti-mishra-504b131bb"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in text-[0.8rem]"></i>
+            <span>LinkedIn</span>
+          </a>
+          
+          <a
+            href="mishra22kirti@gmail.com"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-regular fa-envelope text-[0.8rem]"></i>
+            <span>Email</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="search-overlay" data-search-overlay>
+  <div class="search-overlay-backdrop" data-search-close></div>
+
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass text-[0.8rem] text-muted"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search posts..."
+          autocomplete="off"
+          data-search-input
+        />
+      </div>
+      <button
+        type="button"
+        class="search-close"
+        data-search-close
+        aria-label="Close search"
+      >
+        <i class="fa-solid fa-xmark text-[0.8rem]"></i>
+      </button>
+    </div>
+
+    <div class="search-panel-body">
+      <div class="search-results" data-search-results>
+        <div class="search-empty-state">
+          <div class="search-empty-icon">
+            <i class="fa-solid fa-magnifying-glass text-[1rem]"></i>
+          </div>
+          <p class="search-empty-title">Start searching</p>
+          <p class="search-empty-subtitle">
+            Enter keywords to search articles.
+          </p>
+        </div>
+      </div>
+
+      <div class="search-footer-hints">
+        <div class="search-hint-key">
+          <span>↑↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="search-hint-key">
+          <span>↵</span>
+          <span>Select</span>
+        </div>
+        <div class="search-hint-key">
+          <span>ESC</span>
+          <span>Close</span>
+        </div>
+        <div class="search-hint-key search-hint-right">
+          <span>Ctrl</span><span>K</span>
+          <span>Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dock" data-dock>
+  <div class="dock-inner">
+    
+    <div class="dock-panel" data-dock-panel>
+      
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="search"
+        aria-label="Search"
+        onclick="window.MinimalSearch && window.MinimalSearch.open()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-[0.7rem]"></i>
+      </button>
+
+      
+      <span class="dock-divider" aria-hidden="true"></span>
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="top"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-[0.7rem]"></i>
+      </button>
+    </div>
+
+    
+    <button
+      type="button"
+      class="dock-toggle"
+      aria-label="Open quick actions"
+      data-dock-toggle
+    >
+      <span class="dock-toggle-dots"></span>
+    </button>
+  </div>
+</div>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/js/justifiedGallery.min.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>

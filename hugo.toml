@@ -1,0 +1,389 @@
+baseURL = 'https://minimal-black-demo.netlify.app'
+languageCode = 'en-us'
+title = 'Everything Kirti'
+theme = "minimal-black"
+
+# Enable search index generation and web app manifest 
+[outputs]
+  home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
+  baseName = "manifest"
+  isPlainText = true
+  notAlternative = true
+
+[params]
+  brand = "AMPLIFY"
+  description = "I build and scale performance systems that drive revenue."
+
+  # Favicon - Place your favicon files in /static/ directory
+  # Supported formats: .ico, .png, .svg
+  favicon = "icons/favicon.svg"
+  appleTouchIcon = "apple-touch-icon.png"
+
+  # Logo (optional)
+  logo = "images/logo.png"
+
+  # Project and blog intro text
+  projectsIntro = "A selection of things I’ve been building – tools, resources, and experiments." # Can be empty
+  blogIntro = "" # Can be empty
+
+  # Web App Manifest Configuration (PWA support)
+  [params.manifest]
+    themeColor = "#a855f7"
+    backgroundColor = "#000000"
+    categories = ["blog", "portfolio", "developer"]
+
+    # Custom icon configuration (optional)
+    # If not specified, defaults to /icons/android-chrome-*.png
+    # [[params.manifest.icons]]
+    #   src = "/icons/android-chrome-192x192.png"
+    #   sizes = "192x192"
+    #   type = "image/png"
+    #   purpose = "any maskable"
+
+  # Theme Configuration
+  [params.theme]
+    defaultTheme = "dark"  # Options: "light", "dark", "system"
+
+  # Home Page Configuration
+  [params.home]
+    sections = ["hero", "now", "tech-marquee", "projects", "posts"]
+    showNowSection = true
+    showFeaturedProjects = true
+    showLatestPosts = true
+    featuredProjectsLimit = 3
+    latestPostsLimit = 3
+    projectsTitle = "Selected Projects"
+    projectsSubtitle = ""
+    blogTitle = "Latest Writing"
+    blogSubtitle = ""
+    techMarqueeLabel = "Experienced In"
+
+    # Technology Stack Display
+    [[params.home.tech]]
+      label = "Toyota"
+      icon = "fa-solid fa-car"
+
+    [[params.home.tech]]
+      label = "Citizen Watch"
+      icon = "fa-solid fa-clock"
+
+    [[params.home.tech]]
+      label = "Netflix"
+      icon = "fa-solid fa-film"
+
+    [[params.home.tech]]
+      label = "First Hawaiian Bank"
+      icon = "fa-solid fa-building-columns"
+
+    [[params.home.tech]]
+      label = "Direct Tire"
+      icon = "fa-solid fa-gear"
+
+    [[params.home.tech]]
+      label = "Morey's Seafood"
+      icon = "fa-solid fa-bowl-food"
+
+    [[params.home.tech]]
+      label = "Organon"
+      icon = "fa-solid fa-hospital"
+
+    [[params.home.tech]]
+      label = "Oak Creek Dental Care"
+      icon = "fa-solid fa-hospital"
+
+    [[params.home.tech]]
+      label = "Lodha"
+      icon = "fa-solid fa-building"
+
+    [[params.home.tech]]
+      label = "Minerva"
+      icon = "fa-solid fa-building"
+
+    [[params.home.tech]]
+      label = "Dattani"
+      icon = "fa-solid fa-building"
+
+    [[params.home.tech]]
+      label = "Galaxie Global"
+      icon = "fa-solid fa-screwdriver-wrench"
+
+    [[params.home.tech]]
+      label = "Painting Drive"
+      icon = "fa-solid fa-brush"
+
+    [[params.home.tech]]
+      label = "DeveLearn"
+      icon = "fa-solid fa-graduation-cap"
+
+    [[params.home.techReverse]]
+      label = "Toyota"
+      icon = "fa-solid fa-car"
+
+    [[params.home.techReverse]]
+      label = "Citizen Watch"
+      icon = "fa-solid fa-clock"
+
+    [[params.home.techReverse]]
+      label = "Netflix"
+      icon = "fa-solid fa-film"
+
+    [[params.home.techReverse]]
+      label = "First Hawaiian Bank"
+      icon = "fa-solid fa-building-columns"
+
+    [[params.home.techReverse]]
+      label = "Direct Tire"
+      icon = "fa-solid fa-gear"
+
+    [[params.home.techReverse]]
+      label = "Morey's Seafood"
+      icon = "fa-solid fa-bowl-food"
+
+    [[params.home.techReverse]]
+     label = "Organon"
+     icon = "fa-solid fa-hospital"
+
+   [[params.home.techReverse]]
+      label = "Oak Creek Dental Care"
+      icon = "fa-solid fa-hospital"
+
+    [[params.home.techReverse]]
+      label = "Lodha"
+      icon = "fa-solid fa-building"
+
+    [[params.home.techReverse]]
+      label = "Minerva"
+      icon = "fa-solid fa-building"
+
+   [[params.home.techReverse]]
+      label = "Dattani"
+      icon = "fa-solid fa-building"
+
+    [[params.home.techReverse]]
+      label = "Galaxie Global"
+      icon = "fa-solid fa-screwdriver-wrench"
+
+    [[params.home.techReverse]]
+      label = "Painting Drive"
+      icon = "fa-solid fa-brush"
+
+   [[params.home.techReverse]]
+      label = "DeveLearn"
+      icon = "fa-solid fa-graduation-cap"
+
+  # About Page Alternative Layout Configuration - Optional
+  [params.about.alt]
+    # Stats displayed in the profile card sidebar
+    [[params.about.alt.stats]]
+      value = "5+"
+      label = "Years Coding"
+
+    [[params.about.alt.stats]]
+      value = "20+"
+      label = "Projects"
+
+    [[params.about.alt.stats]]
+      value = "∞"
+      label = "Hours Spent"
+
+    # Skills/Tech Stack badges with icons
+    [[params.about.alt.skills]]
+      label = "JavaScript"
+      icon = "devicon-javascript-plain"
+
+    [[params.about.alt.skills]]
+      label = "Python"
+      icon = "devicon-python-plain"
+
+    [[params.about.alt.skills]]
+      label = "React"
+      icon = "devicon-react-original"
+
+    [[params.about.alt.skills]]
+      label = "Docker"
+      icon = "devicon-docker-plain"
+
+    [[params.about.alt.skills]]
+      label = "PostgreSQL"
+      icon = "devicon-postgresql-plain"
+
+    [[params.about.alt.skills]]
+      label = "AWS"
+      icon = "devicon-amazonwebservices-plain"
+
+  # Hero Section Configuration
+  [params.hero]
+    badge = "Marketing, Web & Creative Studio"
+    title = "Hi, We're your growth partners"
+    role = "We build brands and growth engines for startups - focused on sustainable growth - without burning their capital."
+    summary = "We’re a specialist growth team partnering deeply with growth-focused brands to design and operate full-stack growth - from performance and creative to organic channels, web, and technical foundations. Built for long-term performance, not short-term spikes."
+    # avatar = "images/avatar.jpg"  # Optional: 400x400px recommended
+    location = "Mumbai, IN"
+    focus = "Currently focused on AI-powered marketing automation and E-commerce ads."
+    available = true
+    availableLabel = "Available for work"
+
+    nowLabel = "Tools & Platforms"
+    nowIntro = "Where we Specialize:"
+    now = [
+      "Tracking & Analytics - Google Tag Manager (GTM), Google Analytics 4 (GA4), Meta Pixel, Google Merchant Center (GMC)",
+      "Paid Media & Ad Platforms - Meta Ads (Facebook, Instagram), Google Ads (Search, Display, Video, Shopping, Performance Max), Programmatic Advertising (DSPs - Display & Video)",
+      "Auditing & Market Insights - Screaming Frog, Ahrefs, SEMrush, Google Trends, SurveyMonkey, Brandwatch",
+      "Creative Studio - Figma, Illustrator, Photoshop, Premiere Pro, After Effects, DaVinci Resolve, Blender",
+      "Content & Conversion Copy - Perplexity, Jasper, Anyword, Unbounce Smart Copy, ChatGPT, Hotjar"
+
+    ]
+ 
+    [params.hero.primary]
+      label = "View Experience"
+      href = "/experience/"
+
+    [params.hero.secondary]
+      label = "Read the Blog"
+      href = "/blog/"
+
+  # Icon Libraries
+  [params.icons]
+    useFontAwesome = true
+    useDevicon = true
+
+  # Social Links
+  #[[params.social]]
+   # label = "GitHub"
+    #url = "https://github.com/patkarmandar"
+   # icon = "fa-brands fa-github"
+
+  [[params.social]]
+    label = "LinkedIn"
+    url = "https://www.linkedin.com/in/kirti-mishra-504b131bb"
+    icon = "fa-brands fa-linkedin-in"
+
+  [[params.social]]
+    label = "Email"
+    url = "mishra22kirti@gmail.com"
+    icon = "fa-regular fa-envelope"
+
+  # Analytics Configuration
+  [params.analytics]
+    # Google Analytics (GA4)
+    # googleAnalytics = "G-XXXXXXXXXX"
+
+    # Plausible Analytics (privacy-friendly)
+    # [params.analytics.plausible]
+    #   enabled = true
+    #   domain = "yourdomain.com"
+    #   scriptUrl = "https://plausible.io/js/script.js"
+
+    # Umami Analytics (self-hosted option)
+    # [params.analytics.umami]
+    #   enabled = true
+    #   scriptUrl = "https://analytics.yourdomain.com/script.js"
+    #   websiteId = "your-website-id"
+
+    # Fathom Analytics
+    # [params.analytics.fathom]
+    #   enabled = true
+    #   scriptUrl = "https://cdn.usefathom.com/script.js"
+    #   siteId = "YOUR-SITE-ID"
+
+# Navigation Menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    url = "/"
+    weight = 1
+    identifier = "home"
+    [menu.main.params]
+      icon = "fa-regular fa-house"
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "about"
+    url = "/about/"
+    weight = 2
+    identifier = "about"
+    [menu.main.params]
+      icon = "fa-regular fa-user"
+
+  # [[menu.main]]
+  #   name = "About Alt"
+  #   pageRef = "about-alternative"
+  #   url = "/about-alternative/"
+  #   weight = 2
+  #   identifier = "about-alternative"
+  #   [menu.main.params]
+  #     icon = "fa-regular fa-user"
+
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "projects"
+    url = "/projects/"
+    weight = 3
+    identifier = "projects"
+    [menu.main.params]
+      icon = "fa-regular fa-folder-open"
+
+  [[menu.main]]
+    name = "Blog"
+    pageRef = "blog"
+    url = "/blog/"
+    weight = 4
+    identifier = "blog"
+    [menu.main.params]
+      icon = "fa-regular fa-note-sticky"
+
+# Markup Configuration
+[markup]
+  # Table of Contents
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+  # Goldmark Renderer (Markdown)
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
+  [markup.goldmark.extensions]
+    typographer = true
+    linkify = true
+    table = true
+    strikethrough = true
+    taskList = true
+    definitionList = true
+    footnote = true
+
+    [markup.goldmark.extensions.extras.delete]
+      enable = true
+    [markup.goldmark.extensions.extras.insert]
+      enable = true
+    [markup.goldmark.extensions.extras.mark]
+      enable = true
+
+  # Syntax Highlighting
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    style = "monokai"
+    tabWidth = 2
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Privacy Configuration
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true

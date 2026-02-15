@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Everything Kirti</title>
+    <link>https://minimal-black-demo.netlify.app/</link>
+    <description>Recent content on Everything Kirti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://minimal-black-demo.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Us</title>
+      <link>https://minimal-black-demo.netlify.app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://minimal-black-demo.netlify.app/about/</guid>
+      <description>&lt;h3 id=&#34;who-we-are&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#who-we-are&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    Who We Are&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;We’re a specialist growth team that partners deeply with a small number of brands, operating as an extension of their growth function. We design strategy and run full-stack growth across performance marketing, organic distribution, web and landing experiences, creative, and technical foundations.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-we-work&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#how-we-work&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    How We Work&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;We don’t run campaigns for the sake of spend. Before scaling, we run deep market and competitor research, along with 360° technical audits across tracking, website performance, SEO health, and product positioning.&#xA;Paid media is deployed only once the foundations are solid. From there, we systematically test creatives, audiences, bids, and funnels to drive efficient, compounding growth - while building organic channels that perform beyond paid.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

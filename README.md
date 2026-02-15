@@ -1,2 +1,2 @@
-# kirtimishraa.github.com
+# kirtimishraa.github.io
 My Website
