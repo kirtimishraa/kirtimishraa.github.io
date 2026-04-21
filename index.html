@@ -772,7 +772,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <form name="get-audit" role="form" class="php-email-form">
+          <input type="hidden" name="form-name" value="get-audit" />
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -1155,7 +1156,8 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form data-netlify="true" name="contact-us" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="form-name" value="contact-us" />
               <div class="row gy-4">
 
                 <div class="col-md-6">
