@@ -58,15 +58,7 @@
     });
   });
 
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+
 
   /**
    * Scroll top button
@@ -100,6 +92,7 @@
       mirror: false
     });
   }
+  document.addEventListener('DOMContentLoaded', aosInit);
   window.addEventListener('load', aosInit);
 
   /**
@@ -159,7 +152,8 @@
     });
   }
 
-  window.addEventListener("load", initSwiper);
+  document.addEventListener('DOMContentLoaded', initSwiper);
+  window.addEventListener('load', initSwiper);
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
