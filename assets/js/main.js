@@ -10,6 +10,29 @@
   "use strict";
 
   /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    const removePreloader = () => {
+      if (document.querySelector('#preloader')) {
+        preloader.remove();
+      }
+    };
+    
+    // Remove preloader on load
+    window.addEventListener('load', removePreloader);
+    
+    // Fallback: Remove preloader if load takes too long (e.g. 1.5 seconds after script execution)
+    setTimeout(removePreloader, 1500);
+
+    // If document is already loaded
+    if (document.readyState === 'complete') {
+      removePreloader();
+    }
+  }
+
+  /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
