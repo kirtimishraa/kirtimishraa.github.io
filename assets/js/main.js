@@ -1,11 +1,3 @@
-/**
-* Template Name: Restaurantly
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -217,5 +209,27 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * Change Page Title
+   */
+  const messages = ["Don’t you love me 💔", "Please come back 😔", "Missing you already 🥺", "Don’t leave me 😭"];
+  let i = 0, interval;
+  const originalTitle = document.title;
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      if (interval) clearInterval(interval); // Prevent duplicate intervals
+      interval = setInterval(() => {
+        document.title = messages[i % messages.length];
+        i++;
+      }, 1250);
+    } else {
+      clearInterval(interval);
+      interval = null;
+      document.title = originalTitle;
+      i = 0; // Reset index for next inactive period
+    }
+  });
 
 })();
