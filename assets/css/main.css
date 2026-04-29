@@ -915,7 +915,7 @@ section,
 .section-title p {
   color: var(--accent-color);
   margin: 0;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
   font-family: var(--heading-font);
 }
@@ -1276,7 +1276,7 @@ section,
   }
 
   .arsenal .nav-link.active {
-    color: var(--accent-color);
+    color: var(--contrast-color);
     background: var(--accent-color);
   }
 }
