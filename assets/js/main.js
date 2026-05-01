@@ -223,7 +223,7 @@
       interval = setInterval(() => {
         document.title = messages[i % messages.length];
         i++;
-      }, 1250);
+      }, 1500);
     } else {
       clearInterval(interval);
       interval = null;

@@ -923,7 +923,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.home {
+.hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -934,7 +934,7 @@ section,
   color: var(--default-color);
 }
 
-.home img {
+.hero img {
   position: absolute;
   inset: 0;
   display: block;
@@ -944,7 +944,7 @@ section,
   z-index: 1;
 }
 
-.home:before {
+.hero:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
@@ -952,28 +952,28 @@ section,
   z-index: 2;
 }
 
-.home .container {
+.hero .container {
   position: relative;
   z-index: 3;
 }
 
-.home h2 {
+.hero h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
 }
 
-.home h2 span {
+.hero h2 span {
   color: var(--accent-color);
 }
 
-.home p {
+.hero p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
   font-size: 24px;
 }
 
-.home .cta-btn {
+.hero .cta-btn {
   color: var(--default-color);
   border: 2px solid var(--accent-color);
   font-weight: 400;
@@ -987,26 +987,26 @@ section,
   flex-shrink: 0;
 }
 
-.home .cta-btn:first-child {
+.hero .cta-btn:first-child {
   margin-right: 10px;
 }
 
-.home .cta-btn:hover {
+.hero .cta-btn:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 @media (max-width: 480px) {
-  .home .cta-btn {
+  .hero .cta-btn {
     font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  .home h2 {
+  .hero h2 {
     font-size: 32px;
   }
 
-  .home p {
+  .hero p {
     font-size: 18px;
   }
 }
@@ -1212,7 +1212,7 @@ section,
   font-weight: 600;
 }
 
-.menu .menu-ingredients {
+.menu .menu-tech {
   margin-left: 25px;
   font-style: italic;
   font-size: 14px;
