@@ -1409,7 +1409,7 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 20%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .get-free-audit .php-email-form input[type=text]:focus,
@@ -1427,7 +1427,7 @@ section,
 .get-free-audit .php-email-form input[type=date]::placeholder,
 .get-free-audit .php-email-form input[type=time]::placeholder,
 .get-free-audit .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .get-free-audit .php-email-form button[type=submit] {
