@@ -2,16 +2,11 @@
   "use strict";
 
   const body = document.body;
-  const header = document.querySelector("#header");
+  // const header = document.querySelector("#header");
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
-  const scrollTop = document.querySelector(".scroll-top");
   const originalTitle = document.title;
-
-  function toggleScrolled() {
-    if (!header) return;
-    if (!header.classList.contains("scroll-up-sticky") && !header.classList.contains("sticky-top") && !header.classList.contains("fixed-top")) return;
-    body.classList.toggle("scrolled", window.scrollY > 100);
-  }
+  const messagesTitle = ["Don’t you love me 💔", "Please come back 😔", "Missing you already 🥺", "Don’t leave me 😭"];
+  let i = 0, interval;
 
   function toggleMobileNav() {
     if (!mobileNavToggleBtn) return;
@@ -22,11 +17,6 @@
       "aria-label",
       body.classList.contains("mobile-nav-active") ? "Close navigation" : "Open navigation"
     );
-  }
-
-  function toggleScrollTop() {
-    if (!scrollTop) return;
-    scrollTop.classList.toggle("active", window.scrollY > 100);
   }
 
   function aosInit() {
@@ -116,15 +106,12 @@
   }
 
   function changePageTitle() {
-    const messages = ["Don’t you love me 💔", "Please come back 😔", "Missing you already 🥺", "Don’t leave me 😭"];
-    let i = 0, interval;
-
     if (document.hidden) {
       if (interval) clearInterval(interval);
       interval = setInterval(() => {
-        document.title = messages[i % messages.length];
+        document.title = messagesTitle[i % messagesTitle.length];
         i++;
-      }, 1500);
+      }, 1750);
     } else {
       clearInterval(interval);
       interval = null;
@@ -154,16 +141,7 @@
     });
   });
 
-  if (scrollTop) {
-    scrollTop.addEventListener("click", (event) => {
-      event.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
   document.addEventListener("scroll", () => {
-    toggleScrolled();
-    toggleScrollTop();
     navmenuScrollspy();
   });
 
@@ -178,8 +156,6 @@
   });
 
   window.addEventListener("load", () => {
-    toggleScrolled();
-    toggleScrollTop();
     navmenuScrollspy();
     adjustHashScroll();
   });
