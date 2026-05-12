@@ -2,11 +2,17 @@
   "use strict";
 
   const body = document.body;
-  // const header = document.querySelector("#header");
+  const header = document.querySelector("#header");
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
   const originalTitle = document.title;
-  const messagesTitle = ["Don’t you love me 💔", "Please come back 😔", "Missing you already 🥺", "Don’t leave me 😭"];
+  const messagesTitle = ["Don't you love me 💔", "Please come back 😔", "Missing you already 🥺", "Don't leave me 😭"];
   let i = 0, interval;
+
+  function toggleScrolled() {
+    if (!header) return;
+    if (!header.classList.contains("scroll-up-sticky") && !header.classList.contains("sticky-top") && !header.classList.contains("fixed-top")) return;
+    body.classList.toggle("scrolled", window.scrollY > 100);
+  }
 
   function toggleMobileNav() {
     if (!mobileNavToggleBtn) return;
@@ -142,6 +148,7 @@
   });
 
   document.addEventListener("scroll", () => {
+    toggleScrolled();
     navmenuScrollspy();
   });
 
@@ -156,6 +163,7 @@
   });
 
   window.addEventListener("load", () => {
+    toggleScrolled();
     navmenuScrollspy();
     adjustHashScroll();
   });
