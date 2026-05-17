@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ════════════════════════════════════════
+       HOMEPAGE
+       Crawled weekly — always freshest priority
+       ════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.brandheist.agency/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ════════════════════════════════════════
+       HIGH-INTENT SECTIONS
+       Services + Free Audit = conversion pages
+       ════════════════════════════════════════ -->
+
+  <!-- The Menu: All Services Hub -->
+  <url>
+    <loc>https://www.brandheist.agency/#menu</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Free Website Audit CTA -->
+  <url>
+    <loc>https://www.brandheist.agency/#get-free-audit</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Let's Talk: Contact -->
+  <url>
+    <loc>https://www.brandheist.agency/#talk</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ════════════════════════════════════════
+       TRUST & AUTHORITY SECTIONS
+       ════════════════════════════════════════ -->
+
+  <!-- The Arsenal: Tech Stack & Tools -->
+  <url>
+    <loc>https://www.brandheist.agency/#arsenal</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- The Crew: Team -->
+  <url>
+    <loc>https://www.brandheist.agency/#crew</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- The Flex: Client Logos / Social Proof -->
+  <url>
+    <loc>https://www.brandheist.agency/#flex</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
