@@ -604,6 +604,45 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- ═══ BrandHeist GA4 Event Tracking ═══ -->
+  <script>
+  (function () {  
+    // ── 1. PHONE CLICK TRACKING ──────────────────
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        gtag('event', 'phone_click', {
+          link_url: this.href,
+          link_text: 'Call BrandHeist'
+        });
+      });
+    });
+  
+    // ── 2. FORM TRACKING (Web3Forms via fetch) ───
+    // Intercept all forms using Web3Forms access key
+    document.querySelectorAll('form').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        const formName = form.getAttribute('name') || 'unknown_form';
+  
+        // Map form name → GA4 event name
+        const eventMap = {
+          'get-audit'  : 'audit_form_submit',
+          'contact-us' : 'message_form_submit',
+          'newsletter' : 'newsletter_signup'
+        };
+  
+        const eventName = eventMap[formName] || 'form_submit';
+  
+        gtag('event', eventName, {
+          form_name    : formName,
+          form_location: window.location.href
+        });
+      });
+    });
+  
+  })();
+  </script>
+  <!-- ═══════════════════════════════════════ -->
+
 </body>
 
 </html>
